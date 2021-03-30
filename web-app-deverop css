@@ -52,15 +52,18 @@ text-align: center;
 
 
 
-.record-post-button{
+.r-p-button{
+position: relative;
+left: 20%;
 outline: 0;
-position: absolute;
-right: 7%;
-top: 1%;
-border-radius:15px;
+border-radius:20px;
 padding: 0.5%;
 padding-left: 6%;
 padding-right: 6%;
+width:60%;
+height: 100%;
+
+
 
 
 /* 色付け */
@@ -80,6 +83,14 @@ animation: huerotator 3s infinite alternate;
      filter: hue-rotate(360deg);
    }
 
+}
+
+.r-p-button-divided{
+  position: absolute;
+  right: 3%;
+  top: 0.5%;
+  width: 30%;
+  height: 6%;
 }
 
 
@@ -107,25 +118,25 @@ width: 40%;
 }
 
 .card-two{
-  background-color: white;
-  border: none ;
-  box-shadow: rgb(214, 211, 211) 2px 2px;
-  border-radius: 5%;
-  display: inline-block;
-  text-align: center;
-  margin: 1%;
-  width: 40%;
+background-color: white;
+border: none ;
+box-shadow: rgb(214, 211, 211) 2px 2px;
+border-radius: 5%;
+display: inline-block;
+text-align: center;
+margin: 1%;
+width: 40%;
   }
 
-  .card-three{
-    background-color: white;
-    border: none;
-    box-shadow: rgb(214, 211, 211) 2px 2px;
-    border-radius: 5%;
-    display: inline-block;
-    text-align: center;
-    margin: 1%;
-    width: 40%;
+.card-three{
+background-color: white;
+border: none;
+box-shadow: rgb(214, 211, 211) 2px 2px;
+border-radius: 5%;
+display: inline-block;
+text-align: center;
+margin: 1%;
+width: 40%;
     }
 
 .status{
@@ -142,22 +153,22 @@ position: relative;
 
 
 .figure-month{
-  font-size: 200%;
-  font-weight: bold;
-  position: relative;
+font-size: 200%;
+font-weight: bold;
+position: relative;
   }
 
-  .figure-total{
-    font-size: 200%;
-    font-weight: bold;
-    position: relative;
+.figure-total{
+font-size: 200%;
+font-weight: bold;
+position: relative;
     }
 
 
 
 .hours{
- position: relative;
- font-size: 23px;
+position: relative;
+font-size: 23px;
 color: #697b91;
 }
 
@@ -174,6 +185,22 @@ background-color: white;
 box-shadow: rgb(214, 211, 211) 2px 2px;
 }
 
+
+
+.under{
+display: inline;
+position: absolute;
+text-align: right;
+bottom: 5%;
+left: 45.5%;
+}
+
+
+
+
+/* ---------------------------------右側------------------------------- */
+
+
 .graph-two{
 position: absolute;
 right: 26%;
@@ -184,44 +211,199 @@ width: 22%;
 height: 77%;
 background-color: white;
 box-shadow: rgb(214, 211, 211) 2px 2px;
+  }
+  
+.graph-three{
+position: absolute;
+right: 2%;
+top:10%;
+border:none ;
+border-radius: 5%;
+width: 22%;
+height: 77%;
+background-color: white;
+box-shadow: rgb(214, 211, 211) 2px 2px;
+    }
+  
+
+
+/* ---------------------------------モーダル1------------------------------- */
+
+
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+overflow: auto;
+background-color: rgba(0,0,0,0.5);
+
+  }
+  
+.modal-content{
+position: fixed;
+background-color: white;
+width: 77%;
+height: 85%;
+margin-top: 6%;
+margin-left:10%;
+bottom: 5%;
+border-radius: 5%;
+box-shadow: rgb(214, 211, 211) 2px 2px 2px 2px;
 }
 
-.graph-three{
+.modal-body{
+display: inline-flex;
+}
+
+.close-button-design{
+  border-radius: 15px;
+  border: none;
+  font-size: 170%;
+  opacity: 50%;
+  
+  width: 122%;
+  }
+  
+  .close-button-map{
+  position:absolute;
+  top: 4%;
+  right: 2.2%;
+  
+  }
+
+ /* ---------------------------------モーダル1文章------------------------------- */
+
+
+ .day-I-studied{
   position: absolute;
-  right: 2%;
-  top:10%;
-  border:none ;
+  top: 5%;
+  left: 7%;
+  }
+  
+  .contents-studied{
+  position: absolute;
+  top: 24%;
+  left:7%
+  
+  }
+  
+  .language-studied{
+  position: absolute;
+  top: 48%;
+  left:7%
+  
+  }
+
+/* ---------------------------------モーダル2------------------------------- */
+
+
+.modal-two {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  
+    }
+    
+  .modal-content-two{
+  position: fixed;
+  background-color:white;
+  width: 77%;
+  height: 85%;
+  margin-top: 6%;
+  margin-left:10%;
+  bottom: 5%;
   border-radius: 5%;
-  width: 22%;
-  height: 77%;
-  background-color: white;
-  box-shadow: rgb(214, 211, 211) 2px 2px;
+  box-shadow: rgb(214, 211, 211) 2px 2px 2px 2px;
+  }
+  
+  .modal-body-two{
+  display: inline-flex;
+  
+  }
+
+
+
+.r-p-button-two{
+outline: 0;
+position: absolute;
+bottom: 1.2%;
+left: 34%;
+border-radius:25px;
+padding-top: 1%;
+padding-bottom: 1%;
+padding-left: 15%;
+padding-right: 15%;
+  
+  
+  
+/* 色付け */
+background: linear-gradient(to bottom, #a6d900 0%, #ff4454 100%);
+opacity: 0.5;
+animation: huerotator 3s infinite alternate;
+  }
+   
+  @keyframes huerotator {
+     0% {
+       -webkit-filter: hue-rotate(0deg);
+       filter: hue-rotate(0deg);
+     }
+   
+     100% {
+       -webkit-filter: hue-rotate(360deg);
+       filter: hue-rotate(360deg);
+     }
+  
   }
 
 
 
 
-.under-left{
-  display: inline;
-position: absolute;
-text-align: right;
+/* .close-button-design{
+border-radius: 15px;
+border: none;
+font-size: 170%;
+opacity: 50%;
 
-bottom: 5%;
-left: 45.5%;
+width: 122%;
 }
 
-.under-right{
-  display: inline;
-position: absolute;
-text-align: right;
+.close-button-map{
+position:absolute;
+top: 4%;
+right: 2.2%;
 
-bottom: 5%;
-right: 44.8%;
+} */
+
+
+  /* ---------------------------------モーダル2文章------------------------------- */
+
+
+.record-completed{
+position: absolute;
+left: 29.7%;
+top: 30%;
+width: 40%;
+height: 40%;
+text-align: center;
+font-size: 400%;
 }
 
 
 
 
-/* ---------------------------------右側------------------------------- */
+
+
+
+
 
 
